@@ -5,8 +5,8 @@
 
 MAKEFILE  = project.pbxproj
 
-QT_VER    = 5.6.0
-QT_DIR    = /usr/local/tdesktop/Qt-$(QT_VER)
+QT_VER    = 5.3.2
+QT_DIR    = /usr/local/Qt-$(QT_VER)
 QT_MOC    = $(QT_DIR)/bin/moc
 QT_RCC    = $(QT_DIR)/bin/rcc
 LEX       = flex
@@ -315,6 +315,7 @@ compiler_moc_header_clean:
 	 GeneratedFiles/Debug/moc_intropwdcheck.cpp\
 	 GeneratedFiles/Debug/moc_introsignup.cpp\
 	 GeneratedFiles/Debug/moc_pspecific_mac.cpp
+
 GeneratedFiles/Debug/moc_apiwrap.cpp: SourceFiles/apiwrap.h
 	$(MOC_FILE) SourceFiles/apiwrap.h -o GeneratedFiles/Debug/moc_apiwrap.cpp
 

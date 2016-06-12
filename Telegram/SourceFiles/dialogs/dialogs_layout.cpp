@@ -116,7 +116,7 @@ StyleSheetPointer<UnreadBadgeStyle> unreadBadgeStyle;
 void createCircleMask(int size) {
 	if (!unreadBadgeStyle->circle.isNull()) return;
 
-	unreadBadgeStyle->circle = QImage(size, size, QImage::Format::Format_Grayscale8);
+	unreadBadgeStyle->circle = QImage(size, size, QImage::Format::Format_RGB32);
 	{
 		QPainter pcircle(&unreadBadgeStyle->circle);
 		pcircle.setRenderHint(QPainter::HighQualityAntialiasing, true);

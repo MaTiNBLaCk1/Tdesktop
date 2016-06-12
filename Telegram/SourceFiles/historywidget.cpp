@@ -2796,7 +2796,7 @@ EntitiesInText entitiesFromTextTags(const FlatTextarea::TagList &tags) {
 	auto mentionStart = qstr("mention://user.");
 	for_const (auto &tag, tags) {
 		if (tag.id.startsWith(mentionStart)) {
-			auto match = QRegularExpression("^(\\d+\\.\\d+)(/|$)").match(tag.id.midRef(mentionStart.size()));
+			auto match = QRegularExpression("^(\\d+\\.\\d+)(/|$)").match(tag.id.mid(mentionStart.size()));
 			if (match.hasMatch()) {
 				result.push_back(EntityInText(EntityInTextMentionName, tag.offset, tag.length, match.captured(1)));
 			}
@@ -7769,7 +7769,7 @@ void HistoryWidget::updatePreview() {
 		updateMouseTracking();
 		if (_previewData->pendingTill) {
 			_previewTitle.setText(st::msgServiceNameFont, lang(lng_preview_loading), _textNameOptions);
-			_previewDescription.setText(st::msgFont, _previewLinks.splitRef(' ').at(0).toString(), _textDlgOptions);
+			_previewDescription.setText(st::msgFont, _previewLinks.split(' ').at(0), _textDlgOptions);
 
 			int32 t = (_previewData->pendingTill - unixtime()) * 1000;
 			if (t <= 0) t = 1;

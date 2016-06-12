@@ -994,9 +994,9 @@ Link::Link(HistoryMedia *media, HistoryItem *parent) : ItemBase(parent) {
 	if (_page) {
 		_title = _page->title;
 	}
-	QVector<QStringRef> parts = mainUrl.splitRef('/');
+	QStringList parts = mainUrl.split('/');
 	if (!parts.isEmpty()) {
-		QStringRef domain = parts.at(0);
+		QString domain = parts.at(0);
 		if (parts.size() > 2 && domain.endsWith(':') && parts.at(1).isEmpty()) { // http:// and others
 			domain = parts.at(2);
 		}

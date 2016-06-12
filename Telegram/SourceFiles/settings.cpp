@@ -162,7 +162,7 @@ bool gAutoPlayGif = true;
 
 void settingsParseArgs(int argc, char *argv[]) {
 #ifdef Q_OS_MAC
-	if (QSysInfo::macVersion() >= QSysInfo::MV_10_11) {
+	if (false) {
 		gIsElCapitan = true;
 	} else if (QSysInfo::macVersion() < QSysInfo::MV_10_8) {
 		gPlatform = dbipMacOld;

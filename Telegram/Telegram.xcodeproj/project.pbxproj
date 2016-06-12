@@ -59,8 +59,6 @@
 		074FCB8E19D36851004C6EB2 /* popupmenu.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 074FCB8C19D36851004C6EB2 /* popupmenu.cpp */; };
 		074FCB9119D36E60004C6EB2 /* moc_popupmenu.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 074FCB9019D36E60004C6EB2 /* moc_popupmenu.cpp */; };
 		0752F8701C2C84470026D0BC /* layout.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 0752F86E1C2C84470026D0BC /* layout.cpp */; };
-		0752F8731C2C89220026D0BC /* VideoDecodeAcceleration.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 0752F8721C2C89220026D0BC /* VideoDecodeAcceleration.framework */; };
-		0752F8751C2C89F40026D0BC /* VideoToolbox.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 0752F8741C2C89F40026D0BC /* VideoToolbox.framework */; };
 		07539B1D1A1416AF00083EFC /* moc_history.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 07539B1C1A1416AF00083EFC /* moc_history.cpp */; };
 		0755AEDD1AD12A80004D738A /* moc_abstractbox.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 0755AEDA1AD12A80004D738A /* moc_abstractbox.cpp */; };
 		0755AEDE1AD12A80004D738A /* moc_intropwdcheck.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 0755AEDB1AD12A80004D738A /* moc_intropwdcheck.cpp */; };
@@ -118,7 +116,6 @@
 		07CAACD81AEA64F00058E508 /* AudioUnit.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 07CAACD71AEA64F00058E508 /* AudioUnit.framework */; };
 		07D7034B19B8755A00C4EED2 /* audio.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 07D7034919B8755A00C4EED2 /* audio.cpp */; };
 		07D703BB19B88FB900C4EED2 /* moc_audio.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 07D703BA19B88FB900C4EED2 /* moc_audio.cpp */; };
-		07D7954A1B5544B200DE9598 /* qtpcre in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 07D795491B5544B200DE9598 /* qtpcre */; };
 		07D7EABA1A597DD000838BA2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07D7EABC1A597DD000838BA2 /* Localizable.strings */; };
 		07D8509419F5C97E00623D75 /* core_types.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 07D8509219F5C97E00623D75 /* core_types.cpp */; };
 		07D8509519F5C97E00623D75 /* scheme_auto.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 07D8509319F5C97E00623D75 /* scheme_auto.cpp */; };
@@ -222,7 +219,6 @@
 		B460F624007324313696BE86 /* QuartzCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 7EC00404ACD5AB0E97726B0E /* QuartzCore.framework */; };
 		B6346B66B0A2228A91D8A5D9 /* dcenter.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 315C7FACB4A9E18AA95486CA /* dcenter.cpp */; settings = {ATTRIBUTES = (); }; };
 		B780F9E21269259B90A1F32A /* moc_dcenter.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 2C540BAEABD7F9B5FA11008E /* moc_dcenter.cpp */; settings = {ATTRIBUTES = (); }; };
-		B78304F135DEF1F7A68393A6 /* CoreMedia.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 547CCADBD1CC5050167EF948 /* CoreMedia.framework */; };
 		B8CA3E1E11A7E0E7DF9E1CDE /* file_download.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 01D6341DC31FE5997F7BB159 /* file_download.cpp */; settings = {ATTRIBUTES = (); }; };
 		B8DA82DA1B195A933A0805E7 /* sysbuttons.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6B90F69947805586A6FAE80E /* sysbuttons.cpp */; settings = {ATTRIBUTES = (); }; };
 		B91D13BCC3963CB9C12D24A4 /* flatcheckbox.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = AF4585F593B1C9D0D4FD061C /* flatcheckbox.cpp */; settings = {ATTRIBUTES = (); }; };
@@ -235,7 +231,6 @@
 		C14E6C902F6435B3149ECD64 /* moc_profilewidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 48003469151B9DDE82E851FB /* moc_profilewidget.cpp */; settings = {ATTRIBUTES = (); }; };
 		C1F9D5CA8AF3AD8EBC9D7310 /* moc_application.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = E181C525E21A16F2D4396CA7 /* moc_application.cpp */; settings = {ATTRIBUTES = (); }; };
 		C329997D36D34D568CE16C9A /* moc_animation.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A1479F94376F9732B57C69DB /* moc_animation.cpp */; settings = {ATTRIBUTES = (); }; };
-		CCA737EE379CDB10CC9A0F23 /* AVFoundation.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 21F907AB8D19BD779147A085 /* AVFoundation.framework */; };
 		CDB0266A8B7CB20A95266BCD /* emoji_config.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = B3062303CE8F4EB9325CB3DC /* emoji_config.cpp */; settings = {ATTRIBUTES = (); }; };
 		D0EECF370C58DDCACBC71BAD /* CoreWLAN.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = F26998DF735BCE5F975508ED /* CoreWLAN.framework */; };
 		D1FA8AF31837B51C762A9D4D /* qcocoa in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D53D8E6A188E05078A114294 /* qcocoa */; };
@@ -372,8 +367,6 @@
 		074FCB9019D36E60004C6EB2 /* moc_popupmenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = moc_popupmenu.cpp; path = GeneratedFiles/Debug/moc_popupmenu.cpp; sourceTree = SOURCE_ROOT; };
 		0752F86E1C2C84470026D0BC /* layout.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = layout.cpp; path = SourceFiles/layout.cpp; sourceTree = SOURCE_ROOT; };
 		0752F86F1C2C84470026D0BC /* layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = layout.h; path = SourceFiles/layout.h; sourceTree = SOURCE_ROOT; };
-		0752F8721C2C89220026D0BC /* VideoDecodeAcceleration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoDecodeAcceleration.framework; path = System/Library/Frameworks/VideoDecodeAcceleration.framework; sourceTree = SDKROOT; };
-		0752F8741C2C89F40026D0BC /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		07539B1C1A1416AF00083EFC /* moc_history.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = moc_history.cpp; path = GeneratedFiles/Debug/moc_history.cpp; sourceTree = SOURCE_ROOT; };
 		0755AEDA1AD12A80004D738A /* moc_abstractbox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = moc_abstractbox.cpp; path = GeneratedFiles/Debug/moc_abstractbox.cpp; sourceTree = SOURCE_ROOT; };
 		0755AEDB1AD12A80004D738A /* moc_intropwdcheck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = moc_intropwdcheck.cpp; path = GeneratedFiles/Debug/moc_intropwdcheck.cpp; sourceTree = SOURCE_ROOT; };
@@ -721,9 +714,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0785004D1CCA847400168DBB /* libqtfreetype.a in Link Binary With Libraries */,
-				0752F8751C2C89F40026D0BC /* VideoToolbox.framework in Link Binary With Libraries */,
-				0752F8731C2C89220026D0BC /* VideoDecodeAcceleration.framework in Link Binary With Libraries */,
 				07CAACD81AEA64F00058E508 /* AudioUnit.framework in Link Binary With Libraries */,
 				1BB705CDB741E2B7450201A5 /* Cocoa.framework in Link Binary With Libraries */,
 				328FD74542F6E2C873EE4D4B /* ApplicationServices.framework in Link Binary With Libraries */,
@@ -738,8 +728,6 @@
 				4EB68D0C8182BCE33529C421 /* AudioToolbox.framework in Link Binary With Libraries */,
 				35A1A39F8EAB37889EB3D397 /* CoreAudio.framework in Link Binary With Libraries */,
 				B460F624007324313696BE86 /* QuartzCore.framework in Link Binary With Libraries */,
-				CCA737EE379CDB10CC9A0F23 /* AVFoundation.framework in Link Binary With Libraries */,
-				B78304F135DEF1F7A68393A6 /* CoreMedia.framework in Link Binary With Libraries */,
 				F2A75ACAC9DF6A3F4E5711E7 /* AppKit.framework in Link Binary With Libraries */,
 				D0EECF370C58DDCACBC71BAD /* CoreWLAN.framework in Link Binary With Libraries */,
 				8883FF366F2623E89D90A9E6 /* qgenericbearer in Link Binary With Libraries */,
@@ -758,7 +746,6 @@
 				F4D3747C3A03B25EDC9057BB /* qwebp in Link Binary With Libraries */,
 				9F33AC0693BC81B27D8F518D /* Qt5Gui in Link Binary With Libraries */,
 				8D33FE22B9BBADC7FA46C15B /* qtharfbuzzng in Link Binary With Libraries */,
-				07D7954A1B5544B200DE9598 /* qtpcre in Link Binary With Libraries */,
 				B9ADD90C014EA3FBE351DF03 /* Qt5Core in Link Binary With Libraries */,
 			);
 			name = "Link Binary With Libraries";
@@ -1327,9 +1314,6 @@
 		AF39DD055C3EF8226FBE929D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0785004C1CCA847400168DBB /* libqtfreetype.a */,
-				0752F8741C2C89F40026D0BC /* VideoToolbox.framework */,
-				0752F8721C2C89220026D0BC /* VideoDecodeAcceleration.framework */,
 				07CAACD71AEA64F00058E508 /* AudioUnit.framework */,
 				07055CC3194EE85B0008DEF6 /* libcrypto.a */,
 				07D795491B5544B200DE9598 /* qtpcre */,
@@ -1899,7 +1883,6 @@
 			buildSettings = {
 				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_BOOL_CONVERSION = NO;
 				CLANG_WARN_CONSTANT_CONVERSION = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1909,13 +1892,13 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
-				CRASHPAD_PATH = ./../../Libraries/crashpad/crashpad;
+				CRASHPAD_PATH = "./../../Libraries/crashpad_oldmac/crashpad";
 				CURRENT_PROJECT_VERSION = "$(TDESKTOP_VERSION)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = "$(TDESKTOP_MAJOR_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(TDESKTOP_VERSION)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FFMPEG_PATH = /usr/local;
+				FFMPEG_PATH = "/usr/local/ffmpeg_old";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_LINK_WITH_DYNAMIC_LIBRARIES = NO;
@@ -1935,8 +1918,8 @@
 					./GeneratedFiles,
 					/usr/local/include,
 					"$(QT_PATH)/include",
-					"$(QT_PATH)/include/QtGui/5.6.0/QtGui",
-					"$(QT_PATH)/include/QtCore/5.6.0/QtCore",
+					"$(QT_PATH)/include/QtGui/5.3.2/QtGui",
+					"$(QT_PATH)/include/QtCore/5.3.2/QtCore",
 					"$(QT_PATH)/mkspecs/macx-clang",
 					./../../Libraries/opus/include,
 					"$(OPENAL_PATH)/include",
@@ -1948,7 +1931,7 @@
 					"$(CRASHPAD_PATH)",
 					"$(CRASHPAD_PATH)/third_party/mini_chromium/mini_chromium",
 				);
-				ICONV_PATH = /usr/local;
+				ICONV_PATH = "/usr/local/iconv_old";
 				INFOPLIST_FILE = Telegram.plist;
 				INSTALL_DIR = ./../Mac/Release/;
 				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
@@ -1961,9 +1944,9 @@
 					"$(QT_PATH)/plugins/imageformats",
 					"./../../Libraries/openssl-xcode",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OBJROOT = "./../Mac/$(CONFIGURATION)Intermediate";
-				OPENAL_PATH = /usr/local;
+				OPENAL_PATH = "/usr/local/openal_old";
 				OTHER_CFLAGS = (
 					"-pipe",
 					"-g",
@@ -1979,6 +1962,7 @@
 					"-Wno-unused-function",
 					"-Wno-switch",
 					"-Wno-comment",
+					"-Wno-inconsistent-missing-override",
 					"-DCUSTOM_API_ID",
 					"-I./../../Libraries/openssl-xcode/include",
 				);
@@ -1997,6 +1981,7 @@
 					"-Wno-unused-function",
 					"-Wno-switch",
 					"-Wno-comment",
+					"-Wno-inconsistent-missing-override",
 					"-DCUSTOM_API_ID",
 					"-I./../../Libraries/openssl-xcode/include",
 				);
@@ -2024,12 +2009,12 @@
 				);
 				PRODUCT_NAME = Telegram;
 				QT_LIBRARY_SUFFIX = "";
-				QT_PATH = "/usr/local/tdesktop/Qt-5.6.0";
+				QT_PATH = "/usr/local/Qt-5.3.2";
 				SDKROOT = macosx;
 				SYMROOT = ./../Mac;
 				TDESKTOP_MAJOR_VERSION = 0.9;
 				TDESKTOP_VERSION = 0.9.49;
-				ZLIB_PATH = /usr/local;
+				ZLIB_PATH = "/usr/local/zlib_old";
 			};
 			name = Release;
 		};
@@ -2038,7 +2023,6 @@
 			buildSettings = {
 				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_BOOL_CONVERSION = NO;
 				CLANG_WARN_CONSTANT_CONVERSION = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -2048,14 +2032,14 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
-				CRASHPAD_PATH = ./../../Libraries/crashpad/crashpad;
+				CRASHPAD_PATH = "./../../Libraries/crashpad_oldmac/crashpad";
 				CURRENT_PROJECT_VERSION = "$(TDESKTOP_VERSION)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_COMPATIBILITY_VERSION = "$(TDESKTOP_MAJOR_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(TDESKTOP_VERSION)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FFMPEG_PATH = /usr/local;
+				FFMPEG_PATH = "/usr/local/ffmpeg_old";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_LINK_WITH_DYNAMIC_LIBRARIES = NO;
@@ -2075,8 +2059,8 @@
 					./GeneratedFiles,
 					/usr/local/include,
 					"$(QT_PATH)/include",
-					"$(QT_PATH)/include/QtGui/5.6.0/QtGui",
-					"$(QT_PATH)/include/QtCore/5.6.0/QtCore",
+					"$(QT_PATH)/include/QtGui/5.3.2/QtGui",
+					"$(QT_PATH)/include/QtCore/5.3.2/QtCore",
 					"$(QT_PATH)/mkspecs/macx-clang",
 					./../../Libraries/opus/include,
 					"$(OPENAL_PATH)/include",
@@ -2088,7 +2072,7 @@
 					"$(CRASHPAD_PATH)",
 					"$(CRASHPAD_PATH)/third_party/mini_chromium/mini_chromium",
 				);
-				ICONV_PATH = /usr/local;
+				ICONV_PATH = "/usr/local/iconv_old";
 				INFOPLIST_FILE = Telegram.plist;
 				INSTALL_DIR = ./../Mac/Debug/;
 				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
@@ -2101,10 +2085,10 @@
 					"$(QT_PATH)/plugins/imageformats",
 					"./../../Libraries/openssl-xcode",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OBJROOT = "./../Mac/$(CONFIGURATION)Intermediate";
 				ONLY_ACTIVE_ARCH = YES;
-				OPENAL_PATH = /usr/local;
+				OPENAL_PATH = "/usr/local/openal_old";
 				OTHER_CFLAGS = (
 					"-pipe",
 					"-g",
@@ -2121,6 +2105,7 @@
 					"-Wno-unused-function",
 					"-Wno-switch",
 					"-Wno-comment",
+					"-Wno-inconsistent-missing-override",
 					"-I./../../Libraries/openssl-xcode/include",
 				);
 				OTHER_CPLUSPLUSFLAGS = (
@@ -2139,6 +2124,7 @@
 					"-Wno-unused-function",
 					"-Wno-switch",
 					"-Wno-comment",
+					"-Wno-inconsistent-missing-override",
 					"-I./../../Libraries/openssl-xcode/include",
 				);
 				OTHER_LDFLAGS = (
@@ -2165,12 +2151,12 @@
 				);
 				PRODUCT_NAME = Telegram;
 				QT_LIBRARY_SUFFIX = _debug;
-				QT_PATH = "/usr/local/tdesktop/Qt-5.6.0";
+				QT_PATH = "/usr/local/Qt-5.3.2";
 				SDKROOT = macosx;
 				SYMROOT = ./../Mac;
 				TDESKTOP_MAJOR_VERSION = 0.9;
 				TDESKTOP_VERSION = 0.9.49;
-				ZLIB_PATH = /usr/local;
+				ZLIB_PATH = "/usr/local/zlib_old";
 			};
 			name = Debug;
 		};
@@ -2186,7 +2172,7 @@
 					"$(QT_PATH)/lib",
 				);
 				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OBJROOT = ./../Mac/ReleaseIntermediate;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tdesktop.$(PRODUCT_NAME:rfc1034identifier)";
 				QT_LIBRARY_SUFFIX = "";
@@ -2206,7 +2192,7 @@
 					"$(inherited)",
 					"$(QT_PATH)/lib",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OBJROOT = ./../Mac/DebugIntermediate;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tdesktop.$(PRODUCT_NAME:rfc1034identifier)";
 				QT_LIBRARY_SUFFIX = _debug;

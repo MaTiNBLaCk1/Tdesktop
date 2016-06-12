@@ -169,11 +169,11 @@ template <typename T, size_t N> char(&ArraySizeHelper(T(&array)[N]))[N];
 // For QFlags<> declared in private section of a class we need to declare
 // operators from Q_DECLARE_OPERATORS_FOR_FLAGS as friend functions.
 #define Q_DECLARE_FRIEND_INCOMPATIBLE_FLAGS(Flags) \
-friend Q_DECL_CONSTEXPR QIncompatibleFlag operator|(Flags::enum_type f1, int f2) Q_DECL_NOTHROW;
+friend Q_DECL_CONSTEXPR QIncompatibleFlag operator|(Flags::enum_type f1, int f2);
 
 #define Q_DECLARE_FRIEND_OPERATORS_FOR_FLAGS(Flags) \
-friend Q_DECL_CONSTEXPR QFlags<Flags::enum_type> operator|(Flags::enum_type f1, Flags::enum_type f2) Q_DECL_NOTHROW; \
-friend Q_DECL_CONSTEXPR QFlags<Flags::enum_type> operator|(Flags::enum_type f1, QFlags<Flags::enum_type> f2) Q_DECL_NOTHROW; \
+friend Q_DECL_CONSTEXPR QFlags<Flags::enum_type> operator|(Flags::enum_type f1, Flags::enum_type f2); \
+friend Q_DECL_CONSTEXPR QFlags<Flags::enum_type> operator|(Flags::enum_type f1, QFlags<Flags::enum_type> f2); \
 Q_DECLARE_FRIEND_INCOMPATIBLE_FLAGS(Flags)
 
 // using for_const instead of plain range-based for loop to ensure usage of const_iterator
@@ -212,7 +212,7 @@ public:
 	}
 	constexpr char operator[](std::size_t n) const {
 		return (n < _size) ? _str[n] :
-			throw std::out_of_range("");
+			throw std::exception();
 	}
 	constexpr std::size_t size() const { return _size; }
 	const char *c_str() const { return _str; }
@@ -250,6 +250,9 @@ typedef double float64;
 
 using std::string;
 using std::exception;
+namespace std {
+using nullptr_t = decltype(nullptr);
+}
 
 // we copy some parts of C++11/14/17 std:: library, because on OS X 10.6+
 // version we can use C++11/14/17, but we can not use its library :(
@@ -841,7 +844,7 @@ public:
 	template <typename... Args>
 	void makeIfNull(Args&&... args) {
 		if (isNull()) {
-			reset(new T(std::forward<Args>(args)...));
+			reset(new T(std_::forward<Args>(args)...));
 		}
 	};
 

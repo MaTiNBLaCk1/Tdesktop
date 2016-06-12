@@ -173,9 +173,9 @@ ClickHandlerPtr ItemBase::getResultContentUrlHandler() const {
 }
 
 QString ItemBase::getResultThumbLetter() const {
-	QVector<QStringRef> parts = _result->_url.splitRef('/');
+	QStringList parts = _result->_url.split('/');
 	if (!parts.isEmpty()) {
-		QStringRef domain = parts.at(0);
+		QString domain = parts.at(0);
 		if (parts.size() > 2 && domain.endsWith(':') && parts.at(1).isEmpty()) { // http:// and others
 			domain = parts.at(2);
 		}

@@ -820,7 +820,9 @@ WebLoadManager::WebLoadManager(QThread *thread) {
 	connect(this, SIGNAL(error(webFileLoader*)), _webLoadMainManager, SLOT(error(webFileLoader*)));
 
 	connect(&_manager, SIGNAL(authenticationRequired(QNetworkReply*,QAuthenticator*)), this, SLOT(onFailed(QNetworkReply*)));
+#if QT_VERSION >= QT_VERSION_CHECK(5, 5, 0)
 	connect(&_manager, SIGNAL(sslErrors(QNetworkReply*,const QList<QSslError>&)), this, SLOT(onFailed(QNetworkReply*)));
+#endif
 }
 
 void WebLoadManager::append(webFileLoader *loader, const QString &url) {

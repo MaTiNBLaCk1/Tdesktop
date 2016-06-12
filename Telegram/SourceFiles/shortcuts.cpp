@@ -161,7 +161,6 @@ QByteArray _stripJsonComments(const QByteArray &json) {
 		if (insideString) {
 			continue;
 		}
-
 		if (insideComment == InsideCommentNone && currentChar == '/' && nextChar == '/') {
 			if (ch > offset) {
 				if (result.isEmpty()) result.reserve(json.size() - 2);
@@ -220,6 +219,22 @@ struct DataStruct {
 		t_assert(DataPtr == nullptr);
 		DataPtr = this;
 
+		if (autoRepeatCommands.isEmpty()) {
+			autoRepeatCommands.insert(qsl("media_previous"));
+			autoRepeatCommands.insert(qsl("media_next"));
+			autoRepeatCommands.insert(qsl("next_chat"));
+			autoRepeatCommands.insert(qsl("previous_chat"));
+		}
+
+		if (mediaCommands.isEmpty()) {
+			mediaCommands.insert(qsl("media_play"));
+			mediaCommands.insert(qsl("media_playpause"));
+			mediaCommands.insert(qsl("media_play"));
+			mediaCommands.insert(qsl("media_stop"));
+			mediaCommands.insert(qsl("media_previous"));
+			mediaCommands.insert(qsl("media_next"));
+		}
+
 #define DeclareAlias(keys, command) setShortcut(qsl(keys), qsl(#command))
 #define DeclareCommand(keys, command) createCommand(qsl(#command), ShortcutCommands::command); DeclareAlias(keys, command)
 
@@ -273,21 +288,9 @@ struct DataStruct {
 
 	QSet<QShortcut*> mediaShortcuts;
 
-	QSet<QString> autoRepeatCommands = {
-		qsl("media_previous"),
-		qsl("media_next"),
-		qsl("next_chat"),
-		qsl("previous_chat"),
-	};
+	QSet<QString> autoRepeatCommands;
 
-	QSet<QString> mediaCommands = {
-		qsl("media_play"),
-		qsl("media_pause"),
-		qsl("media_playpause"),
-		qsl("media_stop"),
-		qsl("media_previous"),
-		qsl("media_next")
-	};
+	QSet<QString> mediaCommands;
 };
 
 namespace {
